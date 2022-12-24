@@ -17,13 +17,31 @@
         </div>
     </header>
 
-    <section id="home" class="pt-36 bg-slate-100 lg:pl-20 pb-8 md:flex md:justify-center flex justify-center px-30">
+    <section id="home" class="pt-36 bg-slate-100 lg:pl-20 pb-8 md:flex md:justify-center flex justify-center px-30 mr-10">
         <div class="container">
             <div class="flex flex-wrap mx-auto">
-                <div class="w-full flex justify-center px-5 lg:w-1/2">
-                    <h2 class="font-semibold text-xl text-blue-600">Latihan 1 - Face Mesh</h2>
+                <div class="w-full flex justify-center px-1 lg:w-1/2 mb-10">
+                    <h2 class="font-semibold text-xl text-blue-600 w-full mb-10">Code Program</h2>
 
+                   
+                        import cv2 
+<br><br>
 
+cam = cv2.VideoCapture(0)
+<br> <br>
+#get image from camera
+<br>
+result, image = cam.read()
+<br><br>
+if result: <br>
+    cv2.imshow("Camera", image) <br>
+    cv2.waitKey(0)
+
+<br> <br>
+#if result return err <br>
+else: <br>
+    print("No image detected. Please! try again")
+                    
                 </div>
               
             </div>
